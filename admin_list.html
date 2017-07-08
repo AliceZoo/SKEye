@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>管理员权限-管理员列表</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<header class="head">
+	<div class="logo fl"><b>SKEye开放平台</b><span>后台管理</span></div>
+	<div class="log_name fr"><span class="fr">Princess</span><img src="images/photo.png">
+		<div class="log_sel">
+			<ul>
+				<li><a href="pass.html">修改密码</a></li>
+				<li>退出</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<section class="section">
+	<div class="left fl">
+		<ul>
+			<li class="li1">
+				<span>首页</span>
+				<ul class="nav_list">
+					<li class="index"><a href="index.html">概览</a></li>
+				</ul>
+			</li>
+			<li class="li2">
+				<span>管理</span>
+				<ul class="nav_list">
+					<li class="user_gl"><a href="user_list.html">用户管理</a></li>
+					<li class="app_gl"><a href="application.html">应用管理</a></li>
+				</ul>
+			</li>
+			<li class="li3">
+				<span>统计</span>
+				<ul class="nav_list">
+					<li class="user_analysis"><a href="user.html">用户分析</a></li>
+					<li class="app_analysis"><a href="apply.html">应用分析</a></li>
+					<li class="ports_analysis"><a href="ports.html">接口分析</a></li>
+				</ul>
+			</li>
+			<li class="li4">
+				<span>权限</span>
+				<ul class="nav_list">
+					<li class="admin"><a href="admin_list.html">管理员权限</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="right">
+		<div class="position">管理员权限&nbsp;<span>/&nbsp;管理员列表</span></div>
+		<div class="admin_list">
+			<div class="add"><a href="add_admin.html">添加管理员</a></div>
+			<div class="list_title">
+				<ul>
+					<li>ID</li>
+					<li>姓名</li>
+					<li>邮箱</li>
+					<li>用户名</li>
+					<li>最后登录时间</li>
+					<li>最后登录IP</li>
+					<li>状态</li>
+					<li>操作</li>
+				</ul>
+			</div>
+			<div class="user_list">
+				<ul>
+					<li>
+						<span>1</span>
+						<span>姓名</span>
+						<span>alice@qq.com</span>
+						<span>alice</span>
+						<span>2017-01-20&nbsp;15:30</span>
+						<span>192.168.1.1</span>
+						<span>正常</span>
+						<span><a href="admin.html">更改权限</a>&nbsp;|&nbsp;<a class="lock" href="javascript:;">锁定</a></span>
+					</li>
+					<li>
+						<span>2</span>
+						<span>姓名</span>
+						<span>alice@qq.com</span>
+						<span>alice</span>
+						<span>2017-01-20&nbsp;15:30</span>
+						<span>192.168.1.1</span>
+						<span>正常</span>
+						<span><a href="admin.html">更改权限</a>&nbsp;|&nbsp;<a class="lock" href="javascript:;">锁定</a></span>
+					</li>
+					<li>
+						<span>3</span>
+						<span>姓名</span>
+						<span>alice@qq.com</span>
+						<span>alice</span>
+						<span>2017-01-20&nbsp;15:30</span>
+						<span>192.168.1.1</span>
+						<span>正常</span>
+						<span><a href="admin.html">更改权限</a>&nbsp;|&nbsp;<a class="lock" href="javascript:;">锁定</a></span>
+					</li>
+					<li>
+						<span>4</span>
+						<span>姓名</span>
+						<span>alice@qq.com</span>
+						<span>alice</span>
+						<span>2017-01-20&nbsp;15:30</span>
+						<span>192.168.1.1</span>
+						<span>正常</span>
+						<span><a href="admin.html">更改权限</a>&nbsp;|&nbsp;<a class="lock" href="javascript:;">锁定</a></span>
+					</li>
+				</ul>
+			</div>
+			<div class="page">
+				<span class="prev">&lt;</span>
+				<ul>
+					<li class="bg">1</li>
+					<li>2</li>
+					<li>...</li>
+					<li>20</li>
+					<li>21</li>
+					<li>22</li>
+					<li>23</li>
+				</ul>
+				<span class="next">&gt;</span>
+				<input type="text" name="" value="" placeholder="">
+				<input type="button" name="" value="GO" placeholder="">
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+	<div class="frame">
+		<div class="f_top">
+			<span class="close fr"><img src="images/close.png"></span><b>停用账号</b>
+		</div>
+		<div class="f_foot">
+			<p>确定停用该管理员账号吗？</p>
+			<div class="button">
+				<button type="button">确定</button>
+				<button class="no" type="button">取消</button>
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="js/skeye.js"></script>
+<script type="text/javascript">
+$(".admin").removeClass().addClass("admin on");
+</script>
+</body>
+</html>

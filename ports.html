@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>统计-接口分析</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/dateRange.css"/>
+</head>
+<body>
+<header class="head">
+	<div class="logo fl"><b>SKEye开放平台</b><span>后台管理</span></div>
+	<div class="log_name fr"><span class="fr">Princess</span><img src="images/photo.png">
+		<div class="log_sel">
+			<ul>
+				<li><a href="pass.html">修改密码</a></li>
+				<li>退出</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<section class="section">
+	<div class="left fl">
+		<ul>
+			<li class="li1">
+				<span>首页</span>
+				<ul class="nav_list">
+					<li class="index"><a href="index.html">概览</a></li>
+				</ul>
+			</li>
+			<li class="li2">
+				<span>管理</span>
+				<ul class="nav_list">
+					<li class="user_gl"><a href="user_list.html">用户管理</a></li>
+					<li class="app_gl"><a href="application.html">应用管理</a></li>
+				</ul>
+			</li>
+			<li class="li3">
+				<span>统计</span>
+				<ul class="nav_list">
+					<li class="user_analysis"><a href="user.html">用户分析</a></li>
+					<li class="app_analysis"><a href="apply.html">应用分析</a></li>
+					<li class="ports_analysis"><a href="ports.html">接口分析</a></li>
+				</ul>
+			</li>
+			<li class="li4">
+				<span>权限</span>
+				<ul class="nav_list">
+					<li class="admin"><a href="admin_list.html">管理员权限</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="right">
+		<div class="position">统计&nbsp;<span>/&nbsp;接口分析</span></div>
+		<div class="ports">
+			<div class="ports_title">
+				<ul>
+					<li class="on">人脸对比</li>
+					<li>人脸搜索</li>
+					<li>五官定位</li>
+					<li>家庭物品</li>
+					<li>水果识别</li>
+				</ul>
+			</div>
+			<div class="yesterday">
+				<h4>昨日关键指标</h3>
+				<div class="key_data">
+					<ul>
+					    <span>新增调用</span>
+						<li>日<font class="f_color">1000</font></li>
+						<li>周<font>1000</font></li>
+						<li>月<font>1000</font></li>
+					</ul>
+					<ul>
+					    <span>失败次数</span>
+						<li>日<font class="f_color">1000</font></li>
+						<li>周<font>1000</font></li>
+						<li>月<font>1000</font></li>
+					</ul>
+					<ul>
+					    <span>失败率</span>
+						<li>日<font class="f_color">1%</font></li>
+						<li>周<font>1000</font></li>
+						<li>月<font>1000</font></li>
+					</ul>
+					<ul>
+					    <span>新增接入设备</span>
+						<li>日<font class="f_color">1000</font></li>
+						<li>周<font>1000</font></li>
+						<li>月<font>1000</font></li>
+					</ul>
+				</div>
+			</div>
+			<div class="quota">
+				<div class="key_inside">
+					<span class="fl">关键指标详解</span>
+					<ul>
+						<li class="on2">新增调用</li>
+						<li>失败次数</li>
+						<li>新增接入设备</li>
+					</ul>
+				</div>
+				<div class="key_date">
+					<span class="fl">时间</span>
+					<ul>
+						<li class="on3">7日</li>
+						<li>14日</li>
+						<li>30日</li>
+					</ul>
+					<div class="date_range">
+						<div class="ta_date" id="div_date1">
+							<span class="date_title" id="date1"></span>
+							<a class="opt_sel" id="input_trigger1" href="#">
+								<i class="i_orderd"></i>
+							</a>
+						</div>
+						<div id="datePicker1"></div>
+					</div>					
+				</div>
+				<div class="quota_line">
+					<h4 class="quota_title">趋势图</h4>
+					<div id="chart_1" class="chart"></div>	
+				</div>
+				<div class="quota_date">
+					<h4 class="quota_title"><span class="fr">导出Excel</span>数据详情</h4>
+					<div class="date_inside">
+						<div class="date_title">
+							<ul>
+								<li>日期</li>
+								<li>接口名称</li>
+								<li>调用数</li>
+								<li>失败数</li>
+								<li>失败率</li>
+								<li>新增接入设备</li>
+							</ul>
+						</div>
+						<div class="date_list">
+							<ul>
+								<li>
+									<span>2017-01-02</span>
+									<span>人脸对比</span>
+									<span>1000</span>
+									<span>10</span>
+									<span>1%</span>
+									<span>50</span>
+								</li>
+								<li>
+									<span>2017-01-02</span>
+									<span>人脸对比</span>
+									<span>1000</span>
+									<span>10</span>
+									<span>1%</span>
+									<span>50</span>
+								</li>
+								<li>
+									<span>2017-01-02</span>
+									<span>人脸对比</span>
+									<span>1000</span>
+									<span>10</span>
+									<span>1%</span>
+									<span>50</span>
+								</li>
+								<li>
+									<span>2017-01-02</span>
+									<span>人脸对比</span>
+									<span>1000</span>
+									<span>10</span>
+									<span>1%</span>
+									<span>50</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="page">
+						<span class="prev">&lt;</span>
+						<ul>
+							<li class="bg">1</li>
+							<li>2</li>
+							<li>...</li>
+							<li>20</li>
+							<li>21</li>
+							<li>22</li>
+							<li>23</li>
+						</ul>
+						<span class="next">&gt;</span>
+						<input type="text" name="" value="" placeholder="">
+						<input type="button" name="" value="GO" placeholder="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="js/skeye.js"></script>
+<!-- 折线 -->
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/gray.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- 日期 -->
+<script type="text/javascript" src="js/dateRange.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.highcharts-grid path').attr('stroke','#d4d4d4');
+        $('.highcharts-grid path').attr('stroke-opacity','1');
+        $('.highcharts-axis path').attr('stroke','#d4d4d4');
+        $('rect').attr('fill','');
+        $('svg').attr('fill','none');
+        $('.highcharts-tooltip').attr('fill','#000');
+        $('.highcharts-grid path').attr('stroke','#d4d4d4');
+	    if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){ 
+	   		$('#__calendarPanel').css( 'height','226px');
+		}else{
+				$('#__calendarPanel').css( 'height','216px');
+		}
+		$('.riqi').click(function(){
+			$('#__calendarPanel').toggle()
+		})
+		$('.highcharts-legend').css('display','none');
+		// 时间段
+		var dateRange1 = new pickerDateRange('date1', {
+			isTodayValid : true,
+			startDate : '2017-03-29',
+			endDate : '2017-03-21',
+			needCompare : false,
+			defaultText : ' 至 ',
+			autoSubmit : true,
+			inputTrigger : 'input_trigger1',
+			theme : 'ta',
+			success : function(obj) {
+				$("#dCon2").html('开始时间 : ' + obj.startDate + '<br/>结束时间 : ' + obj.endDate);
+			}
+		});
+    })
+	$(".ports_analysis").removeClass().addClass("ports_analysis on");
+</script>
+</body>
+</html>

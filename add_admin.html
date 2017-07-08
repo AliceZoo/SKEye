@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>管理员权限-更改权限</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<header class="head">
+	<div class="logo fl"><b>SKEye开放平台</b><span>后台管理</span></div>
+	<div class="log_name fr"><span class="fr">Princess</span><img src="images/photo.png">
+		<div class="log_sel">
+			<ul>
+				<li><a href="pass.html">修改密码</a></li>
+				<li>退出</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<section class="section">
+	<div class="left fl">
+		<ul>
+			<li class="li1">
+				<span>首页</span>
+				<ul class="nav_list">
+					<li class="index"><a href="index.html">概览</a></li>
+				</ul>
+			</li>
+			<li class="li2">
+				<span>管理</span>
+				<ul class="nav_list">
+					<li class="user_gl"><a href="user_list.html">用户管理</a></li>
+					<li class="app_gl"><a href="application.html">应用管理</a></li>
+				</ul>
+			</li>
+			<li class="li3">
+				<span>统计</span>
+				<ul class="nav_list">
+					<li class="user_analysis"><a href="user.html">用户分析</a></li>
+					<li class="app_analysis"><a href="apply.html">应用分析</a></li>
+					<li class="ports_analysis"><a href="ports.html">接口分析</a></li>
+				</ul>
+			</li>
+			<li class="li4">
+				<span>权限</span>
+				<ul class="nav_list">
+					<li class="admin"><a href="admin_list.html">管理员权限</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="right">
+		<div class="position">管理员权限&nbsp;<span>/&nbsp;添加管理员</span></div>
+		<div class="account">
+			<h4>账户信息</h4>
+			<div class="form">
+				<form action="" method="get">
+					<p>
+			            <label><span>*</span>用户名：</label>
+			            <input type="text" value="" name="username" />
+			        </p>
+					<p>
+			            <label><span>*</span>姓名：</label>
+			            <input type="text" value="" name="name" />
+			        </p>
+					<p>
+			            <label><span>*</span>邮箱：</label>
+			            <input type="text" value="" name="mail" />
+			        </p>
+					<p>
+			            <label>密码：</label>
+			            <input type="password" name="new_pass" autocomplete="off" />
+			            <font class="admin_pass">不填写将不更改密码</font>
+			        </p>
+					<!-- <p>
+								            <label>&nbsp;</label>
+								            <input type="button" value="提交" name="button" autocomplete="off" />
+								        </p> -->
+				</form>
+			</div>
+			<h4>权限</h4>
+			<div class="authority">
+				<h5>超级管理员</h5>
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>系统所有权限</span>
+						</label>
+					</li>
+				</ul>
+				<h5>管理员权限</h5>
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>所有</span>
+						</label>
+					</li>
+				</ul>
+				<h5>用户管理</h5>
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>所有</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>查看</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>启用/锁定接口</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>更改接口配置</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>导出数据</span>
+						</label>
+					</li>
+				</ul>
+				<h5>应用管理</h5>
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>所有</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>查看</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>启用/锁定应用</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>导出数据</span>
+						</label>
+					</li>
+				</ul>
+				<h5>数据统计</h5>
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>所有</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>查看</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" autocomplete="off">
+							<span>导出数据</span>
+						</label>
+					</li>
+				</ul>
+				<p>
+					<input type="button" name="" value="提交">
+					<input type="reset" name="" value="重置">
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="js/skeye.js"></script>
+<script type="text/javascript">
+	$(".admin").removeClass().addClass("admin on");
+</script>
+</body>
+</html>
